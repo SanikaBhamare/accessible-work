@@ -35,10 +35,16 @@ li.tab {
 
 li.tab:hover {
     background-color: #274965; /* Hover effect */
+    border-bottom: 3px solid #ddd
 }
 
 li.tab.active {
     border-bottom: 2px solid white; /* Active tab border */
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
 .content {
@@ -69,4 +75,11 @@ p {
     display: block;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+img {
+    max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+    height: auto;    /* Maintains the aspect ratio */
+    display: block;  /* Removes extra space caused by inline display */
+    margin-left: auto;  /* Centers the image */
 }
