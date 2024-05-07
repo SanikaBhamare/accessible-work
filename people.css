@@ -1,0 +1,23 @@
+
+.team-member {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px; 
+    margin-left: 10%;
+    
+}
+
+.team-photo {
+    max-width: 100px; /* Set a fixed width for the photo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between photo and text */
+
+}
+
+.member-info {
+    flex: 1; /* Allow the text to take the remaining space */
+}
+
+.bio{
+    margin-right: 10%;
+}

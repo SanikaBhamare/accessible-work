@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <title>Meet the Team</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="people.css">
 </head>
 <body>
     <header>
@@ -11,26 +12,53 @@
         <nav aria-label="Main Navigation">
             <ul class="tabs" role="tablist">
                 <li class="tab active" id="people-tab" role="tab" aria-controls="people">
-                    <a href="people.html">Team</a> <!-- Link to people.html -->
+                    <a href="people.html">Team</a>
                 </li>
                 <li class="tab" id="projects-tab" role="tab" aria-controls="projects">
-                    <a href="projects.html">Projects</a> <!-- Link to projects.html -->
+                    <a href="projects.html">Projects</a>
                 </li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <h2>
-            Meet the Team
-        </h2>
+        <h2>Meet the Team</h2>
+        
+        <!-- Container for team member details -->
+        <div class="team-member">
+            <img src="./Images/photo-placeholder.png" alt="Team Member" class="team-photo"> <!-- Photo of the team member -->
+            <div class="member-info">
+                <h3>Member name</h3>
+                <p>
+                    Short bio here.
+                </p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="./Images/photo-placeholder.png" alt="Team Member" class="team-photo"> <!-- Photo of the team member -->
+            <div class="member-info">
+                <h3>Member name</h3>
+                <p class="bio">
+                    Short bio here.
+                </p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="./Images/photo-placeholder.png" alt="Team Member" class="team-photo"> <!-- Photo of the team member -->
+            <div class="member-info">
+                <h3>Member name</h3>
+                <p>
+                    Short bio here.
+                </p>
+            </div>
+        </div>
+        
     </main>
 
     <footer>
-        <p>
-            © 2024
-            <a href="https://www.uci.edu/">University of California, Irvine</a>.
-            All rights reserved.
-        </p>        </footer>
+        <p>© 2024 <a href="https://www.uci.edu/">University of California, Irvine</a>. All rights reserved.</p>
+    </footer>
 </body>
 </html>
