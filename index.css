@@ -1,5 +1,7 @@
+/* index.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
   font-family: "Roboto", sans-serif;
 }
 
@@ -8,18 +10,18 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #1F3B51;
     color: white;
     padding: 10px;
-    justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
-    background: linear-gradient(99deg, rgb(80, 113, 223) 0%, rebeccapurple 40%, rgb(244, 105, 179) 90%);
-
+    background: #283376;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top */
 }
 
 nav {
@@ -43,7 +45,7 @@ li.tab {
 }
 
 li.tab:hover {
-    background-color: #274965; /* Hover effect */
+    background-color: #364bd2; /* Hover effect */
     border-bottom: 3px solid #ddd;
 }
 
@@ -51,43 +53,30 @@ li.tab.active {
     border-bottom: 3px solid white; /* Active tab border */
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-.content {
-    display: none; /* Hide content sections by default */
-    padding: 20px;
-    border-top: 1px solid #ddd;
-}
-
-.content#people {
-    display: block; /* Show 'About' tab by default */
-}
-
-h1{
+h2 {
     margin-left: 10%;
 }
 
-h2{
-    margin-left: 10%;
-}
-
-h4{
+h4 {
     font-weight: normal;
     font-style: italic;
     color: black;
 }
 
 footer {
-    background: linear-gradient(99deg, rgb(80, 113, 223) 0%, rebeccapurple 40%, rgb(244, 105, 179) 90%);
+    background: #283376;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
 }
 
 p {
@@ -100,5 +89,10 @@ img {
     max-width: 100%; /* Ensures the image doesn't exceed the container's width */
     height: auto;    /* Maintains the aspect ratio */
     display: block;  /* Removes extra space caused by inline display */
-    margin-left: auto;  /* Centers the image */
+    margin-left: 10%;
+}
+
+main {
+    flex: 1; /* Allow main to take up remaining space */
+    padding-bottom: 60px; /* Ensure content is not hidden under the footer */
 }

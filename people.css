@@ -2,22 +2,32 @@
 .team-member {
     display: flex; 
     align-items: center;
-    margin-bottom: 20px; 
-    margin-left: 10%;
-    
+    margin-bottom: 20px;     
 }
 
 .team-photo {
     max-width: 100px; /* Set a fixed width for the photo */
     height: auto; /* Maintain aspect ratio */
     margin-right: 20px; /* Space between photo and text */
-
+    border: 2px solid #364bd2;
+    border-radius: 2px;
 }
 
 .member-info {
     flex: 1; /* Allow the text to take the remaining space */
 }
 
-.bio{
+.team-member .member-info .member-bio {
     margin-right: 10%;
+    margin-left: 0; /* Adjust other styles as needed */
 }
+
+.team-member .member-info h3,
+.team-member .member-info h4 {
+    margin-bottom: 0; /* Remove the bottom margin */
+}
+
+.team-member .member-info h4 {
+    margin-top: 0; /* Remove the top margin */
+}
+
