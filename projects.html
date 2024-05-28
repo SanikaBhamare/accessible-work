@@ -5,6 +5,7 @@
     <title>Homepage</title>
     <link rel="icon" href="./Images/a11y_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body>
     <header>
@@ -12,20 +13,43 @@
         <nav aria-label="Main Navigation">
             <ul class="tabs" role="tablist">
                 <li class="tab" id="home-tab" role="tab" aria-controls="home">
-                    <a href="index.html">Home</a> <!-- Link to people.html -->
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="tab" id="people-tab" role="tab" aria-controls="people">
-                    <a href="people.html">Team</a> <!-- Link to people.html -->
+                    <a href="people.html">Team</a>
                 </li>
                 <li class="tab" id="projects-tab" role="tab" aria-controls="projects">
-                    <a href="projects.html">Projects</a> <!-- Link to projects.html -->
+                    <a href="projects.html">Projects</a>
                 </li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <p>PROJECTS</p>
+        <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Ongoing Projects</h2>
+            <div class="project-cards">
+
+                <a href="project1.html" class="project-card" aria-labelledby="project1-title" aria-describedby="project1-subtitle">
+                    <img src="./Images/placeholder.png" alt="Project 1 Image">
+                    <h3 id="project1-title">Blind Screen Reader Users’ Practices with Generative AI Tools
+                    </h3>
+                    <p id="project1-subtitle">Xinru Tang</p>
+                </a>
+
+                <a href="project2.html" class="project-card" aria-labelledby="project2-title" aria-describedby="project2-subtitle">
+                    <img src="./Images/placeholder.png" alt="Project 2 Image">
+                    <h3 id="project2-title">Experiences of blind and low vision employees in technology companies </h3>
+                    <p id="project2-subtitle">Aparajita (Apara) Marathe</p>
+                </a>
+
+                <a href="project3.html" class="project-card" aria-labelledby="project3-title" aria-describedby="project3-subtitle">
+                    <img src="./Images/placeholder.png" alt="Project 3 Image">
+                    <h3 id="project3-title">Making ChatGPT accessible for blind individuals</h3>
+                    <p id="project3-subtitle">Nikhil Verma</p>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
