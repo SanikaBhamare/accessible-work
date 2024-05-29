@@ -18,7 +18,7 @@ header {
     padding: 10px;
     padding-left: 10%;
     padding-right: 10%;
-    background: #283376;
+    background: #5560be;
     position: sticky;
     top: 0;
     z-index: 1000; /* Ensure it stays on top */
@@ -64,12 +64,8 @@ h4 {
     color: black;
 }
 
-h3.sub-heading{
-    margin-left: 10%;
-}
-
 footer {
-    background: #283376;
+    background: #5560be;
     color: white;
     text-align: center;
     padding: 10px 0;
