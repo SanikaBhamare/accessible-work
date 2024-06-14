@@ -34,3 +34,38 @@
 .project-card p {
     margin: 0;
 }
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.project-photo {
+    max-width: 200px;
+    margin-right: 2em;
+}
+
+.project-info {
+    max-width: 600px;
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.project-tag {
+    display: inline-block;
+    background: #f39c12;
+    color: #fff;
+    padding: 0.2em 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #333;
+}

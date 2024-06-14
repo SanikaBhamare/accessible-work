@@ -90,4 +90,5 @@ main {
     padding-bottom: 60px; /* Ensure content is not hidden under the footer */
     margin-left: 10%;
     margin-right: 10%;
+    padding: 2em;
 }
